@@ -44,5 +44,10 @@ public class ShipController : MonoBehaviour
 
 
     }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        Debug.Log("happend!");
+    }
     #endregion
 }

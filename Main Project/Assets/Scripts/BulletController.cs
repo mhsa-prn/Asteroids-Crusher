@@ -20,5 +20,11 @@ public class BulletController : MonoBehaviour
         //transform.position += Vector3.up * speed * Time.deltaTime;
         transform.Translate(Vector3.up * speed * Time.deltaTime);
     }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        Destroy(col.gameObject);
+        Destroy(gameObject);
+    }
     #endregion
 }
