@@ -7,6 +7,9 @@ public class EnemyShipController : MonoBehaviour
     #region Public Variables
     public float vSpeed; //vertical speed
     public float hSpeed; //Horizontal speed
+    public GameObject bulletPrefab;
+    public Vector2 timeToFire;
+    public GameObject gun;
 
     #endregion
 
@@ -21,6 +24,7 @@ public class EnemyShipController : MonoBehaviour
     private void Start()
     {
         InvokeRepeating("ChangeDirection", 1, 0.5f);
+        InvokeRepeating("Fire", timeToFire.x, timeToFire.y);
     }
 
     private void Update()
@@ -41,4 +45,9 @@ public class EnemyShipController : MonoBehaviour
         direction = Random.Range(-1, 2);
     }
     #endregion
+
+    private void Fire()
+    {
+        Instantiate(bulletPrefab, gun.transform.position, Quaternion.identity);
+    }
 }
