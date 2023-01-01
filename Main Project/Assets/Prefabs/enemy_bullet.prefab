@@ -146,3 +146,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   direction: 1
+  explosionPrefab: {fileID: 0}
+  power: 0

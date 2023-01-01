@@ -100,6 +100,7 @@ MonoBehaviour:
   speed: 3
   direction: 0
   explosionPrefab: {fileID: 1548032186821165922, guid: 90b7902a47f182d4b907e24a3439cba4, type: 3}
+  power: 1
 --- !u!50 &5281660240670563289
 Rigidbody2D:
   serializedVersion: 4
