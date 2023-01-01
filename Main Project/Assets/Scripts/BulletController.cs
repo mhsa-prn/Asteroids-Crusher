@@ -13,6 +13,7 @@ public class BulletController : MonoBehaviour
     #region Public Variables
     public float speed;
     public BulletDirection direction;
+    public GameObject explosionPrefab;
     #endregion
 
     #region Private Variables
@@ -43,6 +44,7 @@ public class BulletController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
+        Instantiate(explosionPrefab, col.contacts[0].point, Quaternion.identity);
         Destroy(col.gameObject);
         Destroy(gameObject);
     }
