@@ -30,7 +30,7 @@ public class AsteroidController : MonoBehaviour
         transform.position += Vector3.down * speed * Time.deltaTime;
         transform.Rotate(new Vector3(0, 0, 1) * rotationSpeed * Time.deltaTime);
 
-        anim.SetInteger("health",health);
+        anim.SetInteger(ANIMATION_NAME, health);
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -38,14 +38,15 @@ public class AsteroidController : MonoBehaviour
         health = health - col.gameObject.GetComponent<BulletController>().power;
         CheckHealth();
     }
-
+     
     private void CheckHealth()
     {
         if (health <= 0)
         {
-            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            Instantiate(explosionPrefab, transform.position, Quaternion.identity); 
             Destroy(gameObject);
         }
+        
     }
     #endregion
 }
