@@ -11,6 +11,7 @@ public class ShipController : MonoBehaviour
     #endregion
 
     #region Private Variables
+    private int _health;
     #endregion
 
     #region Public Methods

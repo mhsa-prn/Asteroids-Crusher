@@ -146,4 +146,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   direction: 1
-  explosionPrefab: {fileID: 510951944217960105, guid: 90b7902a47f182d4b907e24a3439cba4, type: 3}
+  explosionPrefab: {fileID: 0}
+  power: 0
