@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - bullet_enemy
+  - asteroid
+  - ship_enemy
   layers:
   - Default
   - TransparentFX
@@ -38,6 +41,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3097410951
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Middle Ground
+    uniqueID: 552516999
+    locked: 0
+  - name: Foreground
+    uniqueID: 1437076705
+    locked: 0
+  - name: UI
+    uniqueID: 3863726505
     locked: 0

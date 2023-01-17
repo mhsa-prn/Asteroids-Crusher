@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8985401296011738206}
   m_Layer: 9
   m_Name: Asteroid 04
-  m_TagString: Untagged
+  m_TagString: asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 552516999
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 5710230406586871997, guid: ff853e9cea60b66448ac0849f59d7680, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 869e72d877fae764c89f129b8a873c6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  rotationSpeed: 45
+  speed: 1.5
+  rotationSpeed: 15
   health: 4
   explosionPrefab: {fileID: 5240087062177562090, guid: 0ec27dca89c3b524a98b9a478b81857c, type: 3}
 --- !u!50 &7706201968450077524

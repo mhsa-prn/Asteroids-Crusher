@@ -5,7 +5,7 @@ using UnityEngine;
 public class AsteroidsSpawner : MonoBehaviour
 {
     #region Public Variables
-    public GameObject asteroidPrefab;
+    public GameObject[] asteroidsPrefab;
     public Vector2 timeToSpawn;
     public Vector2 xAxisLimitToSpawn;
     #endregion
@@ -27,7 +27,8 @@ public class AsteroidsSpawner : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(timeToSpawn.x, timeToSpawn.y));
         Vector3 pos = transform.position;
         pos.x = Random.Range(xAxisLimitToSpawn.x, xAxisLimitToSpawn.y);
-        Instantiate(asteroidPrefab, pos, Quaternion.identity);
+        int rnd = Random.Range(0, asteroidsPrefab.Length);
+        Instantiate(asteroidsPrefab[rnd], pos, Quaternion.identity);
         StartCoroutine(Spawn());
     }
     #endregion

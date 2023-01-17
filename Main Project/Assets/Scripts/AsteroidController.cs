@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class AsteroidController : MonoBehaviour
 {
-    /// <summary>
-    /// /////////
-    /// </summary>
     #region Public Variables
     public float speed;
     public float rotationSpeed;
